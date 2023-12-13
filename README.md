@@ -35,12 +35,12 @@
 Пример тестового файла:
 ```json
 {
-	  "paths": [
-    "..\\..\\..\\..\\prj.cw\\data\\test1\\test6.png",
-    "..\\..\\..\\..\\prj.cw\\data\\test1\\test7.png",
-    "..\\..\\..\\..\\prj.cw\\data\\test1\\test8.png",
-    "..\\..\\..\\..\\prj.cw\\data\\test1\\test9.png",
-    "..\\..\\..\\..\\prj.cw\\data\\test1\\test10.png"
+  "paths": [
+    "..\\..\\..\\..\\data\\test1\\test6.png",
+    "..\\..\\..\\..\\data\\test1\\test7.png",
+    "..\\..\\..\\..\\data\\test1\\test8.png",
+    "..\\..\\..\\..\\data\\test1\\test9.png",
+    "..\\..\\..\\..\\data\\test1\\test10.png"
   ],
   "pixel_square": 0.01,
   "slice_thickness": 0.1,
