@@ -1,0 +1,12 @@
+{
+  "paths": [
+    "..\\..\\..\\..\\prj.cw\\data\\test1\\test6.png",
+    "..\\..\\..\\..\\prj.cw\\data\\test1\\test7.png",
+    "..\\..\\..\\..\\prj.cw\\data\\test1\\test8.png",
+    "..\\..\\..\\..\\prj.cw\\data\\test1\\test9.png",
+    "..\\..\\..\\..\\prj.cw\\data\\test1\\test10.png"
+  ],
+  "pixel_square": 0.01,
+  "slice_thickness": 0.1,
+  "sub_volume": [1, 755, 1, 950, 1, 5]
+}
