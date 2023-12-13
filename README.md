@@ -10,9 +10,9 @@
 Содержит класс ObjData, методы которого представляют собой функционал для подсчета характеристик пористого материала
 ```c++
   double get_object_volume();
-  double get_absolute_porosity();
+  double get_absolute_porosity(); // получения абсолютного объёма пор
   double get_material_volume();
-  double get_porosity();
+  double get_porosity(); // получения относительного объема пор(содержание пор)
   std::vector<double> get_porosity_distribution(float axis[3]);
   std::pair<double, double> get_partial_porosity(int coordinates[6]);
 ```
