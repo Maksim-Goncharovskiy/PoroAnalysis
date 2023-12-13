@@ -30,30 +30,26 @@ public:
 	ObjData(ObjData&& other) = default;
 	ObjData& operator=(ObjData&& other) = default;
 
-    // Конструктор с параметрами, вызывает основные функции подсчёта пористости.
+    // Main constructor with arguments
     ObjData(std::vector<cv::Mat>& slices, double pixel_square = 0.01, double Slice_thickness = 0.1);
 
-	// Получение объема тела
     double get_object_volume();
-	// Получение абсолютной пористости(объема пор)
     double get_absolute_porosity();
-	// Получение объема материала в теле
     double get_material_volume();
-	// Получение относительной пористости
     double get_porosity();
 
-	// Распределение пор по осям: x, y, z
+	// Getting pores volume distribution, axis can be chosen: x = [1, 0, 0], y = [0, 1, 0], z = [0, 0, 1]
     std::vector<double> get_porosity_distribution(float axis[3]);
 
-	// Пористость части тела(кубик)
-	// first - абсолютный объем пор в выбранной части
-	// second - относительная пористость в выбранной части
+	// Getting porosity characteristics in sub-volume
+	// first - pores volume(absolute porosity)
+	// second - porosity
     std::pair<double, double> get_partial_porosity(int coordinates[6]);
 
 	std::vector<int> get_sizes();
 
 private:
-	// Проверка входных данных
+	// Checking of input data
 	void Check(double& pixel_square, double& Slice_thickness);
 	void Check(int coordinates[6]);
 
